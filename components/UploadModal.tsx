@@ -113,8 +113,10 @@ const UploadModal = () => {
             uploadModal.onClose();
         } catch (error) {
             toast.error("Something went wrong");
-        } finally {
+        // } finally {
             setIsLoading(false);
+
+            console.error(error);
         }
     }
 
